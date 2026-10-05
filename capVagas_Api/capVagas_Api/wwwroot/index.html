@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CapVagas</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <a href="/" class="logo">
+                Vagas
+            </a>
+            <div class="status">
+                <span id="statusIndicador"></span>
+                <span id="statusTexto">Conectando...</span>
+            </div>
+            <div class="search-box">
+                <input type="text"
+                       id="campoBusca"
+                       placeholder="Buscar vaga ou empresa...">
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <section class="area-vagas">
+            <div class="topo-vagas">
+                <div>
+                    <h1>Vagas de emprego</h1>
+                    <p id="contador">
+                        Carregando vagas...
+                    </p>
+                </div>
+            </div>
+            <div class="filtros">
+                <div class="filtro-titulo">
+                    <span>Filtrar por palavra-chave</span>
+                </div>
+                <div class="filtro-input">
+                    <input type="text"
+                           id="campoPalavra"
+                           placeholder="Ex: suporte, analista, desenvolvedor...">
+                    <button type="button"
+                            id="botaoAdicionarPalavra">
+                        Adicionar
+                    </button>
+                </div>
+                <div id="listaPalavras"
+                     class="tags">
+                </div>
+                <div id="mensagemFiltro"
+                     class="mensagem-filtro">
+                </div>
+            </div>
+            <div id="mensagem"
+                 class="mensagem">
+            </div>
+            <section id="listaVagas"
+                     class="lista-vagas">
+            </section>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.7/signalr.min.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

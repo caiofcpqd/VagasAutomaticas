@@ -1,0 +1,33 @@
+# Visual Studio / .NET
+.vs/
+bin/
+obj/
+Debug/
+Release/
+
+# Build
+[Bb]uild/
+[Bb]uilds/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Environment / secrets
+.env
+
+# OS
+.DS_Store
+Thumbs.db

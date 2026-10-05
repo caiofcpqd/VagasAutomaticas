@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="capVagas_Api/capVagas_Api.csproj" />
+  <Project Path="capVagas_Domain/capVagas_Domain.csproj" />
+</Solution>
